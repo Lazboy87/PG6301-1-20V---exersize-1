@@ -1,11 +1,35 @@
 body{
     background-color: beige;
-
+    text-align: center;
 }
 
 .selections{
-    background-color: aqua;
+    background-color:lightcyan;
     border: solid black 1px;
     padding: 10px;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
 
+}
+#Questiondyn,#QH,#mainheader{
+
+    text-align: center;
+}
+
+.selections:hover{
+     background-color: yellow;
+
+ }
+
+.selections:active{
+    background-color: green;
+
+}
+#start{
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
 }

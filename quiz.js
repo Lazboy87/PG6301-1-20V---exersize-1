@@ -51,7 +51,9 @@ const questions = [
 
 ];
 
+
 let correct="";
+let points=0;
 
 
 
@@ -105,14 +107,31 @@ function checkanswer(e) {
 
 
     if(answervalue === correct){
+        let pointsdom = document.getElementById("points");
         alert("Right you are!!");
-
+        pointsdom.innerHTML="";
+        points += 1;
+        pointsdom.innerHTML=points;
         newQuestion();
-    }else {alert("wrong try again")}
+    }else {
+        let pointsdom = document.getElementById("points");
+        alert("wrong try again");
+        pointsdom.innerHTML="";
+        points -= 1;
+        pointsdom.innerHTML=points;
+    }
 
 
 
 
+}
+
+function start() {
+    let startbtn = document.getElementById("start");
+    console.log("im working");
+
+    startbtn.style.display ="none";
+    newQuestion();
 }
 
 
