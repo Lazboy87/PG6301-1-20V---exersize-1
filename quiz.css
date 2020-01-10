@@ -1,0 +1,11 @@
+body{
+    background-color: beige;
+
+}
+
+.selections{
+    background-color: aqua;
+    border: solid black 1px;
+    padding: 10px;
+
+}
